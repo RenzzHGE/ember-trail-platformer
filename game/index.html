@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ember Trail — a tiny fox, three wild trails</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="stage">
+  <canvas id="game" width="960" height="540"></canvas>
+</div>
+<div id="hint">Move &larr; &rarr; or A / D &nbsp;·&nbsp; Jump SPACE / &uarr; / W &nbsp;·&nbsp; Pause P &nbsp;·&nbsp; Mute M</div>
+<script type="module">
+import { bootGame } from './js/main.js';
+const canvas = document.getElementById('game');
+bootGame(canvas);
+</script>
+</body>
+</html>
